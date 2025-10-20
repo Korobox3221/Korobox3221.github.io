@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты | Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            &lt; <span>Portfolio</span> &gt;
+        </div>
+        <div>
+            <a href="index.html">Обо мне</a>
+            <a href="projects.html">Проекты</a>
+            <a href="contact.html">Контакты</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="projects">
+            <h2>Мои Пет-Проекты</h2>
+            <p>
+                Здесь представлены мои работы, созданные в рамках курсов CS50's Web Programming with Python and JavaScript и CS50x. Проекты демонстрируют навыки работы с Django, базами данных, HTML, CSS и JavaScript.
+            </p>
+
+            <div class="project-grid">
+                            <div class="project-card">
+                <h3>CS50W Final Project: Interactive Tournament Bracket (Django/JavaScript)</h3>
+                <p>
+                    **Динамическое веб-приложение для создания и управления турнирными сетками (турнирные таблицы).** Проект отличается высоким уровнем сложности: реализован полностью интерактивный интерфейс, где пользователи могут выбирать победителей в матчах, и прогресс сохраняется в бэкенде.
+                </p>
+                <p>
+                    **Особенности и сложность:** Сложная логика работы с БД (4 взаимосвязанные модели Django) для точного отслеживания состояния каждого участника. Реализована уникальная система обработки группового этапа для турниров на 32 участника. Фронтенд организован модульно (отдельные JS-файлы для каждого раунда) для лучшей поддерживаемости.
+                </p>
+                <p>
+                    **Ключевые технологии:** <span class="highlight">Django (Backend State Management)</span>, Modular JavaScript, ORM, JSON Handling.
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/Korobox3221/Bracket_Tournament.git" target="_blank">GitHub Репозиторий</a>
+                    <a href="https://bracket-tournament.onrender.com" target="_blank">Живое Демо</a> 
+                </div>
+            </div>
+
+                <div class="project-card">
+                    <h3>Auction Site (Django)</h3>
+                    <p>
+                        Платформа для онлайн-аукционов. Реализована система ставок, закрытия лотов, добавления товаров и категорий. Использованы Django Models для хранения данных о пользователях, лотах и ставках.
+                    </p>
+                    <p>
+                        **Ключевые технологии:** Django, Python, SQLite, HTML/CSS.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/Korobox3221/Commerce.git" target="_blank">GitHub Репозиторий</a>
+                        <a href="https://commerce-v8i4.onrender.com" target="_blank">Живое Демо</a> 
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Social Network (Django)</h3>
+                    <p>
+                        Прототип социальной сети. Функционал включает создание и просмотр постов, систему "лайков", возможность подписки/отписки на других пользователей. Используется пагинация и транзакции с базой данных.
+                    </p>
+                    <p>
+                        **Ключевые технологии:** Django, JavaScript, Bootstrap, ORM.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/Korobox3221/Network.git" target="_blank">GitHub Репозиторий</a>
+                        <a href="https://network-soaw.onrender.com/" target="_blank">Живое Демо</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Wiki Encyclopedia (Django)</h3>
+                    <p>
+                        Вики-энциклопедия, позволяющая создавать, редактировать и просматривать статьи в формате Markdown. Реализован поиск и отображение случайных страниц.
+                    </p>
+                    <p>
+                        **Ключевые технологии:** Django, Markdown, Функциональное программирование.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/Korobox3221/Wiki.git" target="_blank">GitHub Репозиторий</a>
+                        <a href="https://wiki-7kr3.onrender.com" target="_blank">Живое Демо</a>
+                    </div>
+                </div>
+
+            
+
+            <div class="project-card">
+                <h3>Finance (CS50x) (Flask/JavaScript)</h3>
+                <p>
+                    Веб-приложение для симуляции **управления акциями** и финансового портфеля. Проект демонстрирует навыки работы с **базами данных** и **внешними API** для получения актуальных данных о ценах акций.
+                </p>
+                <p>
+                    **Ключевые особенности:** Реализованы функции покупки, продажи акций, просмотра истории транзакций и текущего баланса. Проект требует четкого управления пользовательскими **сессиями** и безопасного хранения данных.
+                </p>
+                <p>
+                    **Ключевые технологии:** Python (Flask), **SQL (SQLite)**, **API** (получение котировок), Jinja (шаблонизация), Session Management.
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/Korobox3221/Finance.git" target="_blank">GitHub Репозиторий</a>
+                    <a href="https://finance-sv5s.onrender.com" target="_blank">Живое Демо</a> 
+                </div>
+            </div>        
+        </div>
+                
+                </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Константин Коробейников
+    </footer>
+
+</body>
+</html>

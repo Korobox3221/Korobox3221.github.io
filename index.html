@@ -1,135 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Константин - Портфолио</title>
-    <link rel="icon" type="image/x-icon" href="static/port.svg" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="wrapper">
-        <nav class="site-header-nav">
-          <ul role="list" class="nav-links">
-            <li><a href="#hero">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#work">EXPERIENCE</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Младший Django Разработчик</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <main>
-      <section id="hero" class="section-hero">
-        <div class="wrapper">
-          <div class="hero-content">
-            <h1 class="h2">Константин Коробейников</h1>
-            <p class="h5">Python разработчик</p>
-          </div>
-          <div class="hero-social">
-            <address>Киров, Россия</address>
-            <ul role="list" class="social-links">
-              <li>Найдите меня здесь:</li>
-              <li>
-                <a href="https://github.com/Korobox3221" target="_blank" aria-label="GitHub Profile">
-                  <img
-                    src="static/git.png"
-                    alt="GitHub"
-                    width="24"
-                    height="24"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://t.me/A_man_of_fortune" target="_blank" aria-label="Telegram Profile">
-                  <img
-                    src="static/tg.webp"
-                    alt="Telegram"
-                    width="24"
-                    height="24"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
+    <nav>
+        <div class="logo">
+            &lt; <span>Portfolio</span> &gt;
         </div>
-      </section>
+        <div>
+            <a href="index.html">Обо мне</a>
+            <a href="projects.html">Проекты</a>
+            <a href="contact.html">Контакты</a>
+        </div>
+    </nav>
 
-      <section id="about" class="section-about">
-        <div class="wrapper">
-          <div class="about-intro">
-            <h2 class="h3">
-              Я начинающий Backend-разработчик, за моей спиной более 100 задач
-              и 2 курса по программированию от знаменитого Гарвардского
-              университета.
-            </h2>
-          </div>
-          <div class="about-content">
-            <figure class="about-figure">
-              <img src="static/me.jpg" alt="Developer Konstantin" class="about-img" />
-              <figcaption class="about-caption">Я ❤️</figcaption>
-            </figure>
-            <p class="h5 about-text">
-              Родился в городе Киров, Россия. Более 6 месяцев изучаю
-              программирование. Основной язык **Python**.
-              <br /><br />
-              Уверенно владею **Python**, **SQL** и **C**. Изучил **HTML**,
-              **CSS**, основы **JavaScript** и **Git**, а также фреймворк
-              **Flask**.
+    <div class="container">
+        <section class="hero">
+            <h1>Привет! Я Константин</h1>
+            <p>
+                Junior <span class="highlight">Python/Django</span> разработчик. 
+                Я только начинаю свой путь в IT после успешного прохождения курсов <span class="highlight">CS50w</span>, <span class="highlight">CS50X</span> и <span class="highlight">CS50P</span>. 
+                Увлекаюсь созданием надежных и масштабируемых веб-приложений. 
             </p>
-          </div>
-        </div>
-      </section>
+            <p>
+                Готов к сложным задачам и быстрому обучению!
+            </p>
+            <div class="skills-container">
+                <h3>Языки и Инструменты которыми я владею</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">HTML5 & CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">SQLite & PostgreSQL</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Django rest framework</span>
+                    </div>
+            </div>
+            <a href="projects.html" class="cta-button">Смотреть Мои Проекты &gt;</a> 
+        </section>
 
-      <section id="work" class="section-work">
-        <div class="wrapper text_center">
-          <h4 class="h5 work-section-title">
-            Закончил Вятский государственный университет (Киров, Факультет
-            лингвистики).
-          </h4>
-          <img src="static/uni.png" alt="University Logo" class="work-logo-lg" />
-          
-          <h4 class="h5 work-section-title">
-            Закончил курсы от Гарвардского университета "CS50P" и "CS50X".
-          </h4>
-          <ul role="list" class="work-logos">
-            <li class="certificate">
-              <a href="https://certificates.cs50.io/88ac611d-c7fd-48eb-8524-0fe1c7230c44.pdf?size=letter" target="_blank" aria-label="CS50P Certificate PDF">
-                <img src="static/CS50P.png" alt="CS50P Certificate" class="work-logo-sm" />
-              </a>
-              <a href="https://certificates.cs50.io/88ac611d-c7fd-48eb-8524-0fe1c7230c44.pdf?size=letter" target="_blank">(PDF CS50P)</a>
-            </li>
-            <li class="certificate">
-              <a href="https://certificates.cs50.io/f4a40048-789d-42ac-abf5-fe058febe15f.pdf?size=letter" target="_blank" aria-label="CS50X Certificate PDF">
-                <img src="static/CS50x.png" alt="CS50X Certificate" class="work-logo-sm" />
-              </a>
-              <a href="https://certificates.cs50.io/f4a40048-789d-42ac-abf5-fe058febe15f.pdf?size=letter" target="_blank">(PDF CS50x)</a>
-            </li>
-          </ul>
+    </div>
 
-          <h4 class="h5 work-section-title">
-            Решил более 100 задач по программированию (CS50, leetcode).
-          </h4>
-          <a href="https://github.com/Korobox3221/Problems" target="_blank" class="repo-link">
-            <h5>Репозиторий с решенными задачами</h5>
-            <img src="static/repo.png" alt="GitHub Repository Screenshot" class="work-logo-lg" />
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="wrapper">
-        <p>
-          &copy; <span id="current-year"></span> Константин Коробейников |
-          Portfolio hosted on GitHub Pages.
-        </p>
-      </div>
+    <footer>
+        &copy; 2025 Константин Коробейников
     </footer>
 
-    <script>
-      document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-  </body>
+</body>
 </html>
